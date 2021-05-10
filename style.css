@@ -78,5 +78,73 @@ img {
 
 /* responsive width 420 */
 
+@media screen and (max-width: 420px){
 
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    height: 35vw;
+  }
+
+  .row{
+    paddingf-top: 50px;
+    margin-top: 0;
+  }
+
+  #lezioni .row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+
+  #lezioni .row > .left, #lezioni .row > .right{
+    width: 100%;
+    float: none;
+  }
+
+  .row>*{
+    margin: 20px 0;
+  }
+
+  #lezioni .row img{
+    object-fit: cover;
+    object-position: center;
+  }
+  #lezioni .row img:last-child {
+  position: relative;
+  left: -15%;
+}
+
+#lezioni{
+  background-color: #f2f2cd;
+}
+
+  /* blocco steps */
+  #steps .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  } 
+
+  #steps{
+    background-color: white;
+  }
+
+  #why{
+    background-color: #f2f2cd;
+  }
+}
 
